@@ -23,7 +23,7 @@
 
     var axis = d3.axisBottom()
                      .ticks(dataArray.length)
-                     .scale(widthScale);
+                     .scale(widthScale);          //  define an axis for the bar chart
 
     var canvas = d3.select('body')
                    .append('svg')
@@ -43,7 +43,7 @@
 
    canvas.append("g")
          .attr("transform", "translate(0, 500)")
-         .call(axis);
+         .call(axis);                                  //  add the axis to the DOM 
 
   </script>
   </body>
